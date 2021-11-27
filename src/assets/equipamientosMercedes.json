@@ -1,0 +1,162 @@
+[
+    {
+        "idCoche": 1,
+        "id": 0,
+        "marca": "Mercedes",
+        "nombre": "Pintura Azul",
+        "categoria": "pintura",
+        "descripcion": "Azul Ultra Metalizado",
+        "precio": 200,
+        "color": "Azul",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/audi/audi-azul-marino.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 1,
+        "marca": "Mercedes",
+        "nombre": "Pintura Gris",
+        "categoria": "pintura",
+        "descripcion": "Plata Florete Metalizado",
+        "precio": 100,
+        "color": "",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/audi/audi-gris.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 2,
+        "marca": "Mercedes",
+        "nombre": "Pintura Azul",
+        "categoria": "pintura",
+        "descripcion": "Arablau Kristalleffekt",
+        "precio": 200,
+        "color": "Naranja",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/audi/audi-azul.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 3,
+        "marca": "Mercedes",
+        "nombre": "Pintura Negra",
+        "categoria": "pintura",
+        "descripcion": "Negro Mito Metalizado",
+        "precio": 100,
+        "color": "Negro",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/audi/audi-negro.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 4,
+        "marca": "Mercedes",
+        "nombre": "Pintura Roja",
+        "categoria": "pintura",
+        "descripcion": "Rojo Tango Metalizado",
+        "precio": 200,
+        "color": "Rojo",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/audi/audi-rojo.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+
+
+
+    {
+        "idCoche": 1,
+        "id": 5,
+        "marca": "Mercedes",
+        "nombre": "Motor Nivel 1",
+        "categoria": "motor",
+        "descripcion": "135 kW (184 CV)",
+        "precio": 1000,
+        "color": "",
+        "motor": 135,
+        "combustible": "",
+        "imagen": "/assets/motores/audi-motor.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 6,
+        "marca": "Mercedes",
+        "nombre": "Motor Nivel 2",
+        "categoria": "motor",
+        "descripcion": "150 kW (210 CV)",
+        "precio": 2000,
+        "color": "",
+        "motor": 150,
+        "combustible": "",
+        "imagen": "/assets/motores/audi-motor.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 7,
+        "marca": "Mercedes",
+        "nombre": "Motor Nivel 3",
+        "categoria": "motor",
+        "descripcion": "175 kW (250 CV)",
+        "precio": 3000,
+        "color": "",
+        "motor": 175,
+        "combustible": "",
+        "imagen": "/assets/motores/audi-motor.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+
+
+
+    {
+        "idCoche": 1,
+        "id": 8,
+        "marca": "Mercedes",
+        "nombre": "Gasolina",
+        "categoria": "combustible",
+        "descripcion": "Gasolina",
+        "precio": 1500,
+        "color": "",
+        "motor": 0,
+        "combustible": "Gasolina",
+        "imagen": "/assets/combustibles/gasolina.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 9,
+        "marca": "Mercedes",
+        "nombre": "Diesel",
+        "categoria": "combustible",
+        "descripcion": "Diesel",
+        "precio": 1250,
+        "color": "",
+        "motor": 0,
+        "combustible": "Diesel",
+        "imagen": "/assets/combustibles/diesel.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    },
+    {
+        "idCoche": 1,
+        "id": 10,
+        "marca": "Mercedes",
+        "nombre": "Híbrido",
+        "categoria": "combustible",
+        "descripcion": "Híbrido",
+        "precio": 1750,
+        "color": "",
+        "motor": 0,
+        "combustible": "Híbrido",
+        "imagen": "/assets/combustibles/hibrido.png",
+        "avatar": "/assets/AudiLogo.jpg"
+    }
+]

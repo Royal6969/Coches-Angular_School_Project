@@ -1,0 +1,44 @@
+<!-- <p>inicio works!</p> -->
+
+<div class="body">
+	<!-- ------------------------- Header Video --------------------------- -->
+
+	<div class="v-header container">
+            
+		<div class="fullscreen-video-wrap">
+	
+			<video id="miVideo" autoplay muted loop>
+				<source src="../../../assets/inicio.mp4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="header-overlay">
+			<div class="header-content">
+				<h1>Hola Conductor</h1>
+				<p>Mi nombre es Sergio, y esto es una práctica de Angular!
+					<br>
+					Este ejericio tiene de base todo lo que ya se hizo en el ejercicio de Videojuegos,
+					<br> 
+					Lo nuevo de este ejercicio es que los equipamientos están desplegados por HttpClient,<br>
+                    he instanciado la clase BehaviorSubject de 'rxjs' para algunas propiedades que hemos creado,<br>
+                    también he usado map de 'rxjs/operators' para organizar las respuestas del HttpClient,<br>
+                    incluso he creado un pipe para poder hacer sorting a las distintas categorías de equipamientos,<br>
+                    y hasta he usado ReactiveFormsModule para hacer filter y poder buscar los equipamientos,<br>
+                    todo ello sin contar con la creación y adaptación de un ShoppingCart y un Cart a modo factura.
+					</p>
+				<br><br><br>
+				<a class="btn" routerLink='/coches'>Vamos allá !</a>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<!-- ------------------------ Header Video --------------------- -->
+
+<script>
+	miVideo = document.getElementById('miVideo');
+	miVideo.autoplay = true;
+	miVideo.loop = true;
+	miVideo.load();
+</script>

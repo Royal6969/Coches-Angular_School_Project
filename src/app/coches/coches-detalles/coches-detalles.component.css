@@ -1,0 +1,19 @@
+.example-card {
+  max-width: 350px;
+  margin: 15px;
+}
+ 
+.superContainer {
+  padding: 1px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+.mat-list {
+  width: 33.8vw;
+}
+ 
+.active-link {
+  color: orange;
+}

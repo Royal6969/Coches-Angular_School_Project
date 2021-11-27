@@ -1,0 +1,127 @@
+<!-- <p>equipments works!</p> -->
+
+
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="categoryFilter('')" (click)="categoryFilterBMW('')" (click)="categoryFilterMercedes('')" (click)="categoryFilterAudi('')">
+                <img class="img-pinturas" src="../../../assets/todo.png">
+                <h6>Todo</h6>
+            </a>
+        </div>
+
+        <div class="item">
+            <a (click)="categoryFilter('pinturas')" (click)="categoryFilterBMW('pinturas')" (click)="categoryFilterMercedes('pinturas')" (click)="categoryFilterAudi('pinturas')">
+                <img class="img-pinturas" src="../../../assets/mercedes-amarillo.png">
+                <h6>Pinturas</h6>
+            </a>
+        </div>
+        
+        <div class="item">
+            <a (click)="categoryFilter('motores')" (click)="categoryFilterBMW('motores')" (click)="categoryFilterMercedes('motores')" (click)="categoryFilterAudi('motores')">
+                <img class="img-motores" src="../../../assets/motor-mercedes.png">
+                <h6>Motor</h6>
+            </a>
+        </div>
+        
+        <div class="item">
+            <a (click)="categoryFilter('combustibles')" (click)="categoryFilterBMW('combustibles')" (click)="categoryFilterMercedes('combustibles')" (click)="categoryFilterAudi('combustibles')">
+                <img class="img-combustibles" src="../../../assets/combustible.png">
+                <h6>Combustible</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------- Equipment Card -------------------------- -->
+
+
+<mat-tab-group animationDuration="1500ms">
+
+    <mat-tab label="BMW">
+        <div class="superContainer" *ngIf="equipmentsListBMW != null || equipmentsListBMW != undefined">
+            <mat-card class="example-card" *ngFor="let equipment of filterCategoryBMW | filter:searchKey:'nombre'">
+        
+                <mat-card-header>
+                    <img mat-card-avatar src="{{ equipment.avatar }}">
+        
+                    <mat-card-subtitle>ID: {{ equipment.id }}</mat-card-subtitle>
+                    <mat-card-title>{{ equipment.nombre }}</mat-card-title>
+                    <mat-card-subtitle>Categoría: {{ equipment.categoria }}</mat-card-subtitle>
+                </mat-card-header>
+                
+                <img class="card-img" mat-card-image src="{{ equipment.imagen }}">
+                
+                <mat-card-content>
+                    <mat-card-subtitle>{{ equipment.descripcion }}</mat-card-subtitle>
+                    <mat-card-title>{{ equipment.precio }}€</mat-card-title>
+                </mat-card-content>
+        
+                <mat-divider inset></mat-divider>
+        
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)=addToCart(equipment)>ADD TO CART</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </mat-tab>
+
+
+    <mat-tab label="Audi">
+        <div class="superContainer" *ngIf="equipmentsListMercedes != null || equipmentsListMercedes != undefined">
+            <mat-card class="example-card" *ngFor="let equipment of filterCategoryMercedes | filter:searchKey:'nombre'">
+        
+                <mat-card-header>
+                    <img mat-card-avatar src="{{ equipment.avatar }}">
+        
+                    <mat-card-subtitle>ID: {{ equipment.id }}</mat-card-subtitle>
+                    <mat-card-title>{{ equipment.nombre }}</mat-card-title>
+                    <mat-card-subtitle>Categoría: {{ equipment.categoria }}</mat-card-subtitle>
+                </mat-card-header>
+                
+                <img class="card-img" mat-card-image src="{{ equipment.imagen }}">
+                
+                <mat-card-content>
+                    <mat-card-subtitle>{{ equipment.descripcion }}</mat-card-subtitle>
+                    <mat-card-title>{{ equipment.precio }}€</mat-card-title>
+                </mat-card-content>
+        
+                <mat-divider inset></mat-divider>
+        
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)=addToCart(equipment)>ADD TO CART</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </mat-tab>
+
+
+    <mat-tab label="Mercedes">
+        <div class="superContainer" *ngIf="equipmentsListAudi != null || equipmentsListAudi != undefined">
+            <mat-card class="example-card" *ngFor="let equipment of filterCategoryAudi | filter:searchKey:'nombre'">
+        
+                <mat-card-header>
+                    <img mat-card-avatar src="{{ equipment.avatar }}">
+        
+                    <mat-card-subtitle>ID: {{ equipment.id }}</mat-card-subtitle>
+                    <mat-card-title>{{ equipment.nombre }}</mat-card-title>
+                    <mat-card-subtitle>Categoría: {{ equipment.categoria }}</mat-card-subtitle>
+                </mat-card-header>
+                
+                <img class="card-img" mat-card-image src="{{ equipment.imagen }}">
+                
+                <mat-card-content>
+                    <mat-card-subtitle>{{ equipment.descripcion }}</mat-card-subtitle>
+                    <mat-card-title>{{ equipment.precio }}€</mat-card-title>
+                </mat-card-content>
+        
+                <mat-divider inset></mat-divider>
+        
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)=addToCart(equipment)>ADD TO CART</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </mat-tab>
+  
+</mat-tab-group>

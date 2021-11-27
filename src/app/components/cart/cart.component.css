@@ -1,0 +1,98 @@
+/* ------------------- Cart Table ------------------- */
+
+thead {
+    color: #fff;
+    background: #22b8d1;
+}
+
+.table td,
+.table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr th:first-child,
+tr td:first-child {
+    text-align: left;
+}
+
+.media img {
+    width: 60px;
+    height: 60px;
+}
+
+.media p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.media p.title {
+    font-weight: 600;
+}
+
+.delete-icon {
+    color: crimson;
+    font-size: 30px;
+}
+
+.final-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.final-button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* ------------------ Cart Balance Info ------------- */
+
+.balance-info .table tr,
+.balance-info .table td {
+    padding: 0;
+    border: 0;
+}
+
+.balance-info tr td:first-child {
+    font-weight: 600;
+}
+
+tfoot {
+    border-top: 2px solid #ccc;
+}
+
+tfoot td {
+    font-weight: 600;
+}
+
+/* ------------------- Cart Empty ------------------- */
+
+.example-card {
+    max-width: 350px;
+    margin: 15px;
+}
+ 
+.superContainer {
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-empty {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.img-empty {
+    width: 280px;
+    height: 280px;
+}

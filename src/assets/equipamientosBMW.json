@@ -1,0 +1,162 @@
+[
+    {
+        "idCoche": 0,
+        "id": 0,
+        "marca": "BMW",
+        "nombre": "Pintura Azul",
+        "categoria": "pintura",
+        "descripcion": "Phytonic Blau Metallic",
+        "precio": 200,
+        "color": "Azul",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/BMW/BMW-azul.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 1,
+        "marca": "BMW",
+        "nombre": "Pintura Blanca",
+        "categoria": "pintura",
+        "descripcion": "Mineralweiss metalizado",
+        "precio": 100,
+        "color": "",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/BMW/BMW-blanco.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 2,
+        "marca": "BMW",
+        "nombre": "Pintura Naranja",
+        "categoria": "pintura",
+        "descripcion": "Sunset Orange",
+        "precio": 200,
+        "color": "Naranja",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/BMW/BMW-naranja.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 3,
+        "marca": "BMW",
+        "nombre": "Pintura Negra",
+        "categoria": "pintura",
+        "descripcion": "Saphirschwarz",
+        "precio": 100,
+        "color": "Negro",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/BMW/BMW-negro.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 4,
+        "marca": "BMW",
+        "nombre": "Pintura Roja",
+        "categoria": "pintura",
+        "descripcion": "Melbourne Rot metalizado",
+        "precio": 200,
+        "color": "Rojo",
+        "motor": 0,
+        "combustible": "",
+        "imagen": "/assets/pinturas/BMW/BMW-rojo.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+
+
+
+    {
+        "idCoche": 0,
+        "id": 5,
+        "marca": "BMW",
+        "nombre": "Motor Nivel 1",
+        "categoria": "motor",
+        "descripcion": "135 kW (184 CV)",
+        "precio": 1000,
+        "color": "",
+        "motor": 135,
+        "combustible": "",
+        "imagen": "/assets/motores/BMW-motor.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 6,
+        "marca": "BMW",
+        "nombre": "Motor Nivel 2",
+        "categoria": "motor",
+        "descripcion": "150 kW (210 CV)",
+        "precio": 2000,
+        "color": "",
+        "motor": 150,
+        "combustible": "",
+        "imagen": "/assets/motores/BMW-motor.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 7,
+        "marca": "BMW",
+        "nombre": "Motor Nivel 3",
+        "categoria": "motor",
+        "descripcion": "175 kW (250 CV)",
+        "precio": 3000,
+        "color": "",
+        "motor": 175,
+        "combustible": "",
+        "imagen": "/assets/motores/BMW-motor.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+
+
+
+    {
+        "idCoche": 0,
+        "id": 8,
+        "marca": "BMW",
+        "nombre": "Gasolina",
+        "categoria": "combustible",
+        "descripcion": "Gasolina",
+        "precio": 1500,
+        "color": "",
+        "motor": 0,
+        "combustible": "Gasolina",
+        "imagen": "/assets/combustibles/gasolina.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 9,
+        "marca": "BMW",
+        "nombre": "Diesel",
+        "categoria": "combustible",
+        "descripcion": "Diesel",
+        "precio": 1250,
+        "color": "",
+        "motor": 0,
+        "combustible": "Diesel",
+        "imagen": "/assets/combustibles/diesel.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    },
+    {
+        "idCoche": 0,
+        "id": 10,
+        "marca": "BMW",
+        "nombre": "Híbrido",
+        "categoria": "combustible",
+        "descripcion": "Híbrido",
+        "precio": 1750,
+        "color": "",
+        "motor": 0,
+        "combustible": "Híbrido",
+        "imagen": "/assets/combustibles/hibrido.png",
+        "avatar": "/assets/BMWLogo.jpg"
+    }
+]

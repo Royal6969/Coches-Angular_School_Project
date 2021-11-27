@@ -1,0 +1,66 @@
+.card-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.25rem;
+}
+
+.item {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.item a:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.img-pinturas {
+    width: 80px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.img-motores {
+    width: 100px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.img-combustibles {
+    width: 100px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+/********************************/
+
+.example-card {
+    max-width: 250px;
+    max-height: 400px;
+    margin: 5px;
+}
+ 
+.superContainer {
+  padding: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img {
+    width: 210px;
+    height: 130px;
+    transition: 0.3s ease-in-out;
+}
+
+.card-img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.3);
+}

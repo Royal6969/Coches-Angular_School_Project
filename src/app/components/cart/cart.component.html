@@ -1,0 +1,135 @@
+<!-- <p>cart works!</p> -->
+
+<!-- ------------------------- Cart Table ----------------------- -->
+
+    <div class="ml-5 mr-5 page p-5" size="A4" *ngIf="equipments.length != 0">
+    <!-- --------------- cabecera ------------------ -->
+    <section class="product-area mt-4">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <td>Item Description</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+    <!-- -------------------------------------------- -->
+            <tbody>
+                <tr *ngFor="let equipment of equipments; let i = index">
+                    <td>
+                        <div class="media">
+                            <img class="mr-3 img-fluid" src="{{ equipment.imagen }}">
+                            <div class="media-body">
+                                {{ i + 1 }}
+                                {{ equipment.marca }}
+                                <p class="mt-0 title">{{ equipment.nombre }}</p>
+                                {{ equipment.descripcion }}
+                            </div>
+                        </div>
+                    </td>
+                    <td>{{ equipment.precio }}</td>
+                    <td>{{ equipment.quantity }}</td>
+                    <td>{{ equipment.total }}€</td>
+                    <td>
+                        <button mat-icon-button class="example-icon" (click)="removeEquipment(equipment)">
+                            <mat-icon class="delete-icon">delete_forever</mat-icon>
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="4"></td>
+                    <td class="final-buttons">
+                        <button class="final-button btn btn-danger" (click)="emptyCart()">Empty Cart</button>
+                        <button class="final-button btn btn-primary" routerLink="/equipamientos">Shop More</button>
+                        <button class="final-button btn btn-success">CheckOut</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ---------------------------------- Balance Info -------------------------------- -->
+    <section class="balance-info">
+        <div class="row">
+            <div class="col-8">
+                <p class="m-0 font-weight-bold"><strong>Nota:</strong></p>
+                <p>
+                    Cada línea del carrito es un equipamiento seleccionado,<br>la cual informa del precio/unidad, unidades, y total (precio/unidad * unidades).<br><br>
+                    El SubTotal (Base Imponible) está compuesto por la suma de los precios de todos los equipamientos seleccionados.<br><br>
+                    El IVA aplicado es del tipo General del 21%, y la cantidad total de IVA es el SubTotal * 0,21<br>
+                    El coste de envío aplicado es del 10% sobre el SubTotal, es decir, Subtotal * 0,10<br>
+                    El Total es la suma del SubTotal, con el IVA y con el envío. Total = SubTotal + IVA + envío.
+                </p>
+            </div>
+
+            <div class="col-4">
+                <table class="table border-0 table-hover">
+                    <tr>
+                        <td>SubTotal</td>
+                        <td>{{ subtotal }}€</td>
+                    </tr>
+                    <tr>
+                        <td>Tax:</td>
+                        <td>{{ tax }}€</td>
+                    </tr>
+                    <tr>
+                        <td>Deliver</td>
+                        <td>{{ deliver }}€</td>
+                    </tr>
+
+                    <tfoot>
+                        <tr>
+                            <td>Total:</td>
+                            <td>{{ finalTotal }}€</td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <div class="col-12">
+                    <img class="img-fluid" src="../../../assets/signature.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- -------------------------------- Cart Empty ------------------------ -->
+
+<div class="superContainer" *ngIf="equipments.length == 0">
+    <mat-card class="example-card">
+        <mat-card-header class="header-empty">
+        
+            <button mat-icon-button class="button-empty example-icon favorite-icon" routerLinkActive="active-link" routerLink="/equipamientos">
+                <mat-icon>add_shopping_cart</mat-icon>
+                <div style="font-size: 10px;" class="badge bg-danger">0</div>
+            </button>
+
+            <mat-card-title class="title-empty">Mis Equipamientos</mat-card-title>
+            <mat-card-subtitle class="subtitle-empty">Cart</mat-card-subtitle>
+        </mat-card-header>
+
+        <mat-divider inset></mat-divider>
+
+        <img mat-card-image class="img-empty" src="../../../assets/empty.png" alt="Photo of a Shiba Inu">
+            
+        <mat-divider inset></mat-divider><br>
+
+        <mat-card-content>
+            <h4>Your cart is empty</h4>
+            <h6>Add equipments to it</h6>
+        </mat-card-content>
+
+        <mat-card-actions>
+            <button mat-raised-button color="primary" routerLink="/equipamientos">SHOP NOW</button>
+        </mat-card-actions>
+
+        <mat-card-footer>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+        </mat-card-footer>
+    </mat-card>
+</div>
